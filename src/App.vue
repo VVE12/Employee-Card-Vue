@@ -1,15 +1,20 @@
 <template>
   <div id="app">
-    <img width="25%" src="./assets/logo.png">
+    <AddUser />
+    <UserCard />
     <EmployeeCard />
   </div>
 </template>
 
 <script>
+import UserCard from "./components/UserCard";
+import AddUser from "./components/AddUser";
 import EmployeeCard from "./components/EmployeeCard";
 export default {
   name: 'App',
-  components: { 
+  components: {
+    UserCard,
+    AddUser,
     EmployeeCard
   }
 };
@@ -26,6 +31,6 @@ body {
   text-align: center;
   color: #2c3e50;
   margin: 10px;
-  width: 900px;
+  width: 1000px;
 }
 </style>
